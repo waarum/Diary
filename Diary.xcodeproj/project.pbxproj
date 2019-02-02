@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FE370D5C2201F1B700017085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE370D5B2201F1B700017085 /* AppDelegate.swift */; };
-		FE370D5E2201F1B700017085 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE370D5D2201F1B700017085 /* ViewController.swift */; };
+		FE370D5E2201F1B700017085 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE370D5D2201F1B700017085 /* StartViewController.swift */; };
 		FE370D612201F1B700017085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE370D5F2201F1B700017085 /* Main.storyboard */; };
 		FE370D642201F1B700017085 /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE370D622201F1B700017085 /* Diary.xcdatamodeld */; };
 		FE370D662201F1BA00017085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE370D652201F1BA00017085 /* Assets.xcassets */; };
 		FE370D692201F1BA00017085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE370D672201F1BA00017085 /* LaunchScreen.storyboard */; };
+		FE98D73022058401006FA82A /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE98D72F22058401006FA82A /* WritingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE370D582201F1B700017085 /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE370D5B2201F1B700017085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE370D5D2201F1B700017085 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE370D5D2201F1B700017085 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FE370D602201F1B700017085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE370D632201F1B700017085 /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
 		FE370D652201F1BA00017085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE370D682201F1BA00017085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE370D6A2201F1BA00017085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE98D72F22058401006FA82A /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				FE370D5B2201F1B700017085 /* AppDelegate.swift */,
-				FE370D5D2201F1B700017085 /* ViewController.swift */,
-				FE370D5F2201F1B700017085 /* Main.storyboard */,
-				FE370D652201F1BA00017085 /* Assets.xcassets */,
-				FE370D672201F1BA00017085 /* LaunchScreen.storyboard */,
-				FE370D6A2201F1BA00017085 /* Info.plist */,
-				FE370D622201F1B700017085 /* Diary.xcdatamodeld */,
+				FE98D7312205844B006FA82A /* Controllers */,
+				FE98D734220584C0006FA82A /* Models */,
+				FE98D733220584A6006FA82A /* Views */,
+				FE98D7322205848C006FA82A /* Supporting Files */,
 			);
 			path = Diary;
+			sourceTree = "<group>";
+		};
+		FE98D7312205844B006FA82A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE370D5D2201F1B700017085 /* StartViewController.swift */,
+				FE98D72F22058401006FA82A /* WritingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FE98D7322205848C006FA82A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE370D652201F1BA00017085 /* Assets.xcassets */,
+				FE370D6A2201F1BA00017085 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE98D733220584A6006FA82A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE370D5F2201F1B700017085 /* Main.storyboard */,
+				FE370D672201F1BA00017085 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE98D734220584C0006FA82A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE370D622201F1B700017085 /* Diary.xcdatamodeld */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE370D642201F1B700017085 /* Diary.xcdatamodeld in Sources */,
-				FE370D5E2201F1B700017085 /* ViewController.swift in Sources */,
+				FE98D73022058401006FA82A /* WritingViewController.swift in Sources */,
+				FE370D5E2201F1B700017085 /* StartViewController.swift in Sources */,
 				FE370D5C2201F1B700017085 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8VYK8F246;
-				INFOPLIST_FILE = Diary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Diary/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8VYK8F246;
-				INFOPLIST_FILE = Diary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Diary/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
