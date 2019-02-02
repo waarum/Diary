@@ -9,8 +9,12 @@
 import UIKit
 
 class WritingViewController: UIViewController {
+    let dateOfDiary:Date = Date()
+    let formatter = DateFormatter()
     override func viewDidLoad() {
-        
+        print(dateOfDiary)
+        formatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "ja_JP"))
+        titleTextField.text = formatter.string(from: dateOfDiary)
     }
     
     
